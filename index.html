@@ -38,11 +38,12 @@
     .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px} .chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:10px 13px;font-family:'Space Grotesk';font-size:12px;font-weight:800;text-transform:uppercase;color:var(--muted)}
     .cards3,.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px} .card{border:1px solid var(--line);background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden} .card:hover,.work-card:hover{background:var(--card2);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
     .edu{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:34px} .badge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px} .badge{border:1px solid var(--line);background:var(--card2);border-radius:22px;padding:18px} .badge strong{display:block;font-family:'Anton';font-size:42px;line-height:1.12;color:var(--lime)} .skill-icon{font-size:32px;margin-bottom:18px}
+    .experience-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:22px;margin-top:36px;align-items:start}.experience-note{position:sticky;top:116px}.timeline{display:grid;gap:18px}.exp-item{border:1px solid var(--line);background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}.exp-item:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(var(--accent),var(--lime),var(--cyan))}.exp-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:10px}.exp-time{font-family:'Space Grotesk';font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--lime);white-space:nowrap}.exp-role{font-family:'Anton',Impact,sans-serif;text-transform:uppercase;font-size:clamp(28px,3.2vw,42px);line-height:1.18;color:var(--text);letter-spacing:-.01em}.exp-place{font-family:'Space Grotesk';font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-size:12px;margin-bottom:14px}.exp-list{margin:16px 0 0;padding-left:18px;color:var(--muted);line-height:1.75}.exp-list li{margin:7px 0}.exp-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.exp-tag{border:1px solid var(--line);background:var(--card2);border-radius:999px;padding:9px 12px;font-family:'Space Grotesk';font-size:11px;font-weight:900;text-transform:uppercase;color:var(--muted)}
     .work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:36px} .work-card{grid-column:span 4;border:1px solid var(--line);background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column} .work-card:nth-child(1),.work-card:nth-child(6),.work-card:nth-child(10){grid-column:span 6} .work-image{display:block;aspect-ratio:4/5;background:#222;overflow:hidden} .work-card:nth-child(3) .work-image,.work-card:nth-child(6) .work-image{aspect-ratio:16/9} .work-image img{width:100%;height:100%;object-fit:cover;transition:.65s ease} .work-card:hover img{transform:scale(1.055)} .work-copy{padding:24px} .meta{font-family:'Space Grotesk';font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;display:block} .work-copy h3{margin-bottom:14px} .work-copy p{margin:0}
     .gallery-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:36px} .gallery-strip img{border-radius:28px;border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:1/1;object-fit:cover} .philosophy{text-align:center;padding:150px 0} .philosophy blockquote{font-family:'Anton';font-size:clamp(38px,7vw,88px);line-height:1.24;letter-spacing:-.01em;text-transform:uppercase;margin:0 auto;max-width:1160px;text-wrap:balance} .philosophy p{max-width:760px;margin:46px auto 0;font-size:18px}
     .contact{display:grid;grid-template-columns:1fr .9fr;gap:18px} .contact h2{font-size:clamp(54px,8.5vw,118px);line-height:1.1} .line{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);padding:18px 0;color:var(--muted)} footer{position:relative;z-index:1;text-align:center;color:var(--muted);padding:50px 20px;border-top:1px solid var(--line)}
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s ease} .reveal.visible{opacity:1;transform:none}
-    @media(max-width:960px){.hero,.grid2,.edu,.contact{grid-template-columns:1fr}.cards3,.skills{grid-template-columns:1fr 1fr}.work-card,.work-card:nth-child(1),.work-card:nth-child(6),.work-card:nth-child(10){grid-column:span 6}.nav{display:none}.hero-photo,.hero-photo img{min-height:520px}}
+    @media(max-width:960px){.hero,.grid2,.edu,.experience-grid,.contact{grid-template-columns:1fr}.cards3,.skills{grid-template-columns:1fr 1fr}.work-card,.work-card:nth-child(1),.work-card:nth-child(6),.work-card:nth-child(10){grid-column:span 6}.nav{display:none}.experience-note{position:relative;top:auto}.hero-photo,.hero-photo img{min-height:520px}}
     @media(max-width:640px){:root{--container:calc(100vw - 28px)}section{padding:82px 0}.header{top:10px}h1{font-size:clamp(50px,18vw,72px);line-height:1.12}h2{line-height:1.16}.hero{padding-top:110px;gap:32px}.hero-photo,.hero-photo img{min-height:450px}.stats,.cards3,.skills,.badge-grid,.gallery-strip{grid-template-columns:1fr}.work-grid{display:block}.work-card{margin-bottom:18px}.quote{padding:30px}.philosophy blockquote{line-height:1.28}.line{display:grid;gap:6px}}
 
     /* ===== Opening automation + cinematic motion system ===== */
@@ -85,7 +86,7 @@
   <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
   <header class="header">
     <a class="brand" href="#home"><span class="mark">P</span><span>Phạm Nhật An</span></a>
-    <nav class="nav"><a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a><a href="#works">Ấn phẩm</a><a href="#contact">Liên hệ</a></nav>
+    <nav class="nav"><a href="#about">Giới thiệu</a><a href="#experience">Kinh nghiệm</a><a href="#skills">Kỹ năng</a><a href="#works">Ấn phẩm</a><a href="#contact">Liên hệ</a></nav>
     <button class="toggle" id="themeBtn">Đổi nền</button>
   </header>
   <main>
@@ -123,6 +124,59 @@
         <div class="card reveal"><h3>Ứng tuyển</h3><p>Portfolio phù hợp cho Marketing Intern, Content Marketing, Social Media, Brand Assistant hoặc vị trí thực tập có yêu cầu tư duy nội dung và visual.</p><div class="chips"><span class="chip">Runner-up Marketing Simulation Contest</span><span class="chip">Practice projects</span></div></div>
       </div>
     </section>
+    <section class="wrap" id="experience">
+      <div class="eyebrow reveal">Experience / Work history</div>
+      <h2 class="reveal">Kinh nghiệm làm việc</h2>
+      <p class="lead reveal">Phần kinh nghiệm được viết lại theo hướng rõ tên công ty, vị trí, thời gian và công việc đã đảm nhiệm — phù hợp để nhà tuyển dụng nhanh chóng thấy được năng lực Content Marketing, Social Media và Livestream Commerce.</p>
+      <div class="experience-grid">
+        <aside class="card experience-note reveal">
+          <h3>Từ thực hành đến môi trường thật.</h3>
+          <p>Mình đã tham gia các công việc liên quan đến nội dung, visual, fanpage, TikTok và livestream commerce. Điểm mạnh là biết kết hợp tư duy marketing với thiết kế, video ngắn và workflow AI để hỗ trợ sản xuất nội dung nhanh hơn.</p>
+          <div class="chips"><span class="chip">Content Marketing</span><span class="chip">Social Media</span><span class="chip">Livestream Commerce</span><span class="chip">AI Workflow</span></div>
+        </aside>
+        <div class="timeline">
+          <article class="exp-item reveal">
+            <div class="exp-top"><div class="exp-role">Content Marketing Intern</div><div class="exp-time">06/2025 — 08/2025</div></div>
+            <div class="exp-place">HH Glory</div>
+            <p>Tham gia xây dựng nội dung social media, TikTok và workflow sáng tạo bằng AI tools nhằm tăng tốc quá trình sản xuất content cho thương hiệu.</p>
+            <ul class="exp-list">
+              <li>Xây dựng chiến lược nội dung theo định hướng truyền thông của thương hiệu.</li>
+              <li>Triển khai nội dung cho TikTok và Fanpage, hỗ trợ phát triển kênh social media.</li>
+              <li>Quay dựng video sản phẩm, xử lý nội dung ngắn phù hợp với nền tảng số.</li>
+              <li>Ứng dụng AI workflow như ChatGPT cùng Canva, Photoshop, CapCut để hỗ trợ ý tưởng và tối ưu quy trình sản xuất.</li>
+            </ul>
+            <div class="exp-tags"><span class="exp-tag">Content Marketing</span><span class="exp-tag">TikTok</span><span class="exp-tag">Fanpage</span><span class="exp-tag">AI Workflow</span></div>
+          </article>
+
+          <article class="exp-item reveal">
+            <div class="exp-top"><div class="exp-role">Livestream Inhouse</div><div class="exp-time">08/2025 — 04/2026</div></div>
+            <div class="exp-place">OnPoint E-commerce</div>
+            <p>Hỗ trợ vận hành livestream, phối hợp KOL/KOC và theo dõi hiệu quả campaign trong môi trường e-commerce có nhịp độ nhanh.</p>
+            <ul class="exp-list">
+              <li>Setup livestream, hỗ trợ chuẩn bị giao diện, nội dung và quy trình vận hành buổi live.</li>
+              <li>Theo dõi hiệu suất campaign và các chỉ số liên quan trong quá trình triển khai.</li>
+              <li>Hỗ trợ workflow làm việc với KOL/KOC để đảm bảo nội dung và tiến độ livestream.</li>
+              <li>Tổng hợp báo cáo, ghi nhận kết quả và đề xuất hướng tối ưu doanh thu/campaign.</li>
+            </ul>
+            <div class="exp-tags"><span class="exp-tag">Livestream</span><span class="exp-tag">E-commerce</span><span class="exp-tag">KOL/KOC</span><span class="exp-tag">Campaign Report</span></div>
+          </article>
+
+          <article class="exp-item reveal">
+            <div class="exp-top"><div class="exp-role">Social Media & Content</div><div class="exp-time">10/2022 — 09/2024</div></div>
+            <div class="exp-place">Freelance Fanpage Management</div>
+            <p>Xây dựng nội dung, thiết kế social post và quản lý fanpage cho các thương hiệu nhỏ và cộng đồng sinh viên.</p>
+            <ul class="exp-list">
+              <li>Lên kế hoạch nội dung theo từng nhóm chủ đề, chiến dịch và mục tiêu truyền thông.</li>
+              <li>Thiết kế social post, poster, banner và visual nhận diện cho fanpage/sự kiện.</li>
+              <li>Tương tác cộng đồng, hỗ trợ duy trì hình ảnh fanpage và lịch đăng nội dung.</li>
+              <li>Xây dựng branding visual cơ bản bằng Canva, Photoshop và hệ sinh thái Facebook.</li>
+            </ul>
+            <div class="exp-tags"><span class="exp-tag">Content Planning</span><span class="exp-tag">Social Post</span><span class="exp-tag">Community</span><span class="exp-tag">Branding Visual</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="wrap" id="skills">
       <div class="eyebrow reveal">Skills</div><h2 class="reveal">Bộ kỹ năng ứng tuyển</h2>
       <div class="skills">
